@@ -1,0 +1,13 @@
+stages:
+  stage1:
+    cmd: python preprocessing.py data/raw_data.csv data/processed_data.csv
+    deps:
+      - data/raw_data.csv
+    outs:
+      - data/processed_data.csv
+  stage2:
+    cmd: python modeling.py data/processed_data.csv results/model.pkl
+    deps:
+      - data/processed_data.csv
+    outs:
+      - results/model.pkl
