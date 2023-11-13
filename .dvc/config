@@ -1,4 +1,6 @@
 [core]
-    remote = origin
+    remote = dataset-registry
 ['remote "origin"']
+    url = https://github.com/iterative/dataset-registry
+['remote "dataset-registry"']
     url = https://github.com/iterative/dataset-registry
